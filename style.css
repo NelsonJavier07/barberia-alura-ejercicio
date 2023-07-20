@@ -1,0 +1,295 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px; 
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold; /*negrita*/
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.productos li:hover{
+    border-color: #C78C19;
+}
+.productos li:active{
+    border-color: #088C19;
+}
+
+.productos li:hover h2{
+    font-size: 34px;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productoDescripcion{
+    font-size: 18px;
+}
+
+.productoPrecio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(./imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* main{
+
+} */
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padre{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+} 
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border-style: none;
+    border-radius: 5px;
+    transition: .8s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2); 
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px Solid #000000;
+    padding: 8px 15px;
+}
+
+/*CSS para nuestra pagina inicial o home*/
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.tituloPrincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+/*.tituloPrincipal:first-letter{  selecciona la 1ra letra de la clase y la coloca en negrita
+    font-weight: bold;
+}
+
+.tituloPrincipal:before{    Coloca un corchete antes del titulo
+    content: "[";
+}
+.tituloPrincipal:after{ Coloca un corchete despues del titulo
+    content: "]";
+}
+
+p:first-line{  pone la primera linea delun parrafo en italica
+    font-style: italic;
+}*/
+
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+    /*background: linear-gradient(45deg, orange 50%, blue, red, black); agrega colores en
+     degradado se le puede indicar la inclinacion 
+     con el 1er parametro, ademas tambien el 
+     procentaje que ocupa cada color
+     Background: radial-gradient(45deg, orange 50%, blue, red, black) realiza los mismo degradados de manera circular*/
+
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listas-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; /*lleva el elemento a la parte superior del bloque*/
+}
+
+.items{
+    line-height: 1.5;
+}
+.items:before{
+    content: "★";
+}
+.items:first-child{  /*pinta de negrita el 1er elemento de la lista*/
+    font-weight: bold;
+}
+/*.items:last-child{
+    font-weight: bold;
+    pinta de negrita el ultimo elemento de la lista
+}*/
+/*.items:nth-child(3){
+    font-weight: bold;
+    permite elegir que elemento de la lista se coloca en negrita con el numero dentro del parentesis
+    si colocaramos nth-child(2n) seleccionaria elementos pares del listado
+}*/
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000; /*1er parametro sombra en el eje horizontal - 2do parametro sombra en el eje vertical (+ hacia abajo - hacia arriba) - 3er parametro difuminacion 4to parametro expancion de sombra - Color de sombra | inclusoo se puede agrega mas sombra colocando una coma y la misma cantirdad de parametros*/
+    /*Se puede colocar una sombra interna con la propiedad "inset" box-shadow: inset 0 0 10px red*/  /*pagina para practicar sobreado - box shadow generator*/
+}
+.imagen-diferenciales:hover{
+    opacity: 0.3%;
+    
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 480px){  /*Son configuraciones que se vulven a hacer para que los dispositivos de hasta 480px se vean medianamente bien*/
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .listas-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+}
+
+
+
